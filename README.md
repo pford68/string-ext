@@ -23,6 +23,13 @@ Yet another templating function.  Sorry, but it was a great idea 10 years ago.  
 template using either ${key} or {key} for placeholders.  Takes an object, key/value pairs, as input.  If a key
 matches a key in a placeholder, the associated value replaces the placeholder.
 
+```javascript
+var pattern = "The {team} will win the {contest} in the {season} season.";
+var str = pattern.format({ team: 'Texas Rangers', contest: 'World Series', season: 2010});  
+// str equals "The Texas Rangers will win the World Series in the 2010 season.".
+
+```
+
 ### toCamelCase()
 Requires spaces between intended syllables
 

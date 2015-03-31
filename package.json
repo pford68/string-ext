@@ -1,0 +1,27 @@
+{
+  "name": "string-ext",
+  "version": "1.0.0",
+  "description": "Useful extensions for the String prototype",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine-node test/spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pford68/string-ext"
+  },
+  "keywords": [
+    "string",
+    "polyfill",
+    "prototype"
+  ],
+  "author": "Philip Ford",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pford68/string-ext/issues"
+  },
+  "homepage": "https://github.com/pford68/string-ext",
+  "dependencies": {
+    "underscore": "^1.8.2"
+  }
+}

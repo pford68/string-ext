@@ -1,6 +1,6 @@
 {
   "name": "string-ext",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Useful extensions for the String prototype",
   "main": "index.js",
   "scripts": {

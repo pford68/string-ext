@@ -3,8 +3,10 @@ Useful extensions for the String prototype, for Node and Browserify.  Will not o
 
 ## API Documentation
 ### endsWith(substr)
+Polyfill for String.prototype.endsWith().
 
 ### startsWith(substr)
+Polyfill for String.prototype.startsWith().
 
 ### capitalize()
 Converts only the first character to upper case.
@@ -36,7 +38,9 @@ Requires spaces between intended syllables
 ### contains(substr)
 Returns true/false for whether the specified string exists within the current string.
 
-### equalsIgnoreCase()
+### equalsIgnoreCase(str)
+Case insensitive string comparison.   Returns true/false for whether the associated string's 
+content matches the specified string's content.
 
 ### toBoolean()
 

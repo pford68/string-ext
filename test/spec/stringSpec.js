@@ -299,4 +299,21 @@ describe("String.prototype", function(){
         });
     });
 
+    describe("justify(n)", function(){
+        it("should add n spaces before the associated string", function(){
+            expect("FIRST_NAME".justify(5)).toEqual("     FIRST_NAME");
+            expect("FIRST_NAME".justify(0)).toEqual("FIRST_NAME");
+            expect("FIRST_NAME".justify(-1)).toEqual("FIRST_NAME");
+        });
+    });
+
+
+    describe("rightJustify(n)", function(){
+        it("should add n spaces after the associated string", function(){
+            expect("FIRST_NAME".rightJustify(5)).toEqual("FIRST_NAME     ");
+            expect("FIRST_NAME".rightJustify(0)).toEqual("FIRST_NAME");
+            expect("FIRST_NAME".rightJustify(-1)).toEqual("FIRST_NAME");
+        });
+    });
+
 });

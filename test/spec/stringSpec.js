@@ -115,6 +115,14 @@ describe("String.prototype", function(){
     });
 
 
+    describe("uncapitalize()", function(){
+        it ("should uncapitalize only the first letter of the string", function(){
+            expect("Porshe".uncapitalize()).toEqual("porshe");
+            expect("pORSHE".uncapitalize()).not.toEqual("porshe");
+        });
+    });
+
+
     describe("format()", function(){
         it ("should replace the /{.+}/ in the string if the contents of {} match a property name of the argument", function(){
             var pattern = "The {team} will win the {contest} in the {season} season.";
@@ -151,7 +159,7 @@ describe("String.prototype", function(){
     });
 
 
-    describe("contains", function(){
+    describe("contains()", function(){
         var s = "The Dallas Cowboys will win the Super Bowl in the 2010-11 season.";
 
         it("should return true if the specified string can be found in the current string", function(){

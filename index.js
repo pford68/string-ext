@@ -32,10 +32,10 @@ methods = {
     },
 
     /**
-     *
+     * Converts the first letter of the associated string to lower case.
      */
     uncapitalize: function() {
-        return this.charAt(0).toUpperCase() + this.substring(1);
+        return this.charAt(0).toLowerCase() + this.substring(1);
     },
 
     /**

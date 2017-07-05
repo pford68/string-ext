@@ -16,7 +16,7 @@
     "prototype"
   ],
   "author": "Philip Ford",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/pford68/string-ext/issues"
   },

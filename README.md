@@ -3,9 +3,11 @@ Useful extensions for the String prototype, for Node and Browserify.  Will not o
 
 ## API Documentation
 ### endsWith(substr)
+@deprecated
 Polyfill for String.prototype.endsWith().
 
 ### startsWith(substr)
+@deprecated
 Polyfill for String.prototype.startsWith().
 
 ### capitalize()
@@ -21,6 +23,8 @@ Converts only the first character to lower case.
 ### trimRight()
 
 ### format(object)
+@@deprecated Made obsolete by ES2015 Template Strings.
+
 Yet another templating function.  Sorry, but it was a great idea 10 years ago.  The associated String is a
 template using either ${key} or {key} for placeholders.  Takes an object, key/value pairs, as input.  If a key
 matches a key in a placeholder, the associated value replaces the placeholder.
@@ -36,6 +40,8 @@ var str = pattern.format({ team: 'Texas Rangers', contest: 'World Series', seaso
 Requires spaces between intended syllables
 
 ### contains(substr)
+@Deprecated Made obsolete by `String.prototype.includes`.
+
 Returns true/false for whether the specified string exists within the current string.
 
 ### equalsIgnoreCase(str)
